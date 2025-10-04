@@ -5,68 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>رزومه امیر علی ساکی</title>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Vazirmatn', sans-serif;
-      background: linear-gradient(to right, #e0eafc, #cfdef3);
       margin: 0;
-      padding: 0;
+      font-family: 'Vazirmatn', sans-serif;
       direction: rtl;
+      background-color: #f0f4f8;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      margin-top: 50px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    header {
+      background-color: #0a3d62;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    h1 {
-      color: #2c3e50;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 10px;
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #00d2ff;
     }
-    h2 {
-      color: #34495e;
-      margin-top: 30px;
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
     }
-    ul {
-      padding-right: 20px;
+    nav a:hover {
+      color: #00d2ff;
     }
-    .contact {
-      font-size: 0.95em;
-      color: #555;
-      margin-bottom: 20px;
+    .hero {
+      background: linear-gradient(to right, #00d2ff, #3a7bd5);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
     }
-    .skills li {
-      background: #ecf0f1;
-      margin: 5px 0;
-      padding: 5px 10px;
-      border-radius: 5px;
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      background-color: #00c853;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .hero button:hover {
+      background-color: #009624;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>امیر علی ساکی</h1>
-    <p class="contact">📞 09215761650 | 📧 l00558166@gmail.com</p>
-    <p class="contact">🏠 دورود، ایران</p>
 
-    <h2>تحصیلات</h2>
-    <ul>
-      <li>دانش‌آموز رشته کامپیوتر، مدرسه امام حسین، پایه یازدهم</li>
-    </ul>
+<header>
+  <h1>رزومه من</h1>
+  <nav>
+    <a href="#about">درباره من</a>
+    <a href="#services">خدمات</a>
+    <a href="#skills">مهارت‌ها</a>
+    <a href="#portfolio">نمونه‌کارها</a>
+    <a href="#contact">تماس</a>
+  </nav>
+</header>
 
-    <h2>تجربه کاری</h2>
-    <p>در حال حاضر تجربه کاری ندارم.</p>
+<section class="hero">
+  <h2>امیر علی ساکی</h2>
+  <p>توسعه‌دهنده وب | دانش‌آموز رشته کامپیوتر</p>
+  <button>دانلود رزومه من</button>
+</section>
+<section id="about" style="background-color:#ffffff; padding:60px 20px; text-align:center;">
+  <h2 style="color:#0a3d62; font-size:32px;">درباره من</h2>
+  <p style="max-width:700px; margin:auto; font-size:18px; color:#333;">
+    من امیر علی ساکی هستم، دانش‌آموز پایه یازدهم رشته کامپیوتر از شهر دورود. عاشق طراحی وب و یادگیری زبان‌های برنامه‌نویسی هستم. هدفم ساختن پروژه‌های واقعی و ورود حرفه‌ای به دنیای فناوریه.
+  </p>
+</section>
 
-    <h2>مهارت‌ها</h2>
-    <ul class="skills">
-      <li>HTML, CSS, JavaScript</li>
-      <li>Word, PowerPoint, Excel, Access</li>
-      <li>C#, PHP, SQL</li>
-    </ul>
+<section id="services" style="background-color:#e0f7fa; padding:60px 20px; text-align:center;">
+  <h2 style="color:#0a3d62; font-size:32px;">خدمات من</h2>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:40px;">
+    <div style="background:white; padding:20px; border-radius:10px; width:250px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+      <i class="fas fa-code" style="font-size:40px; color:#00d2ff;"></i>
+      <h3 style="color:#333;">توسعه وب</h3>
+      <p style="color:#555;">طراحی و پیاده‌سازی صفحات وب با HTML, CSS, JavaScript و PHP</p>
+    </div>
+    <div style="background:white; padding:20px; border-radius:10px; width:250px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+      <i class="fas fa-paint-brush" style="font-size:40px; color:#00d2ff;"></i>
+      <h3 style="color:#333;">طراحی رابط کاربری</h3>
+      <p style="color:#555;">ساخت ظاهر زیبا و کاربرپسند برای سایت‌ها با استفاده از CSS و Figma</p>
+    </div>
+    <div style="background:white; padding:20px; border-radius:10px; width:250px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+      <i class="fas fa-database" style="font-size:40px; color:#00d2ff;"></i>
+      <h3 style="color:#333;">مدیریت داده‌ها</h3>
+      <p style="color:#555;">کار با پایگاه داده SQL و طراحی فرم‌های اطلاعاتی با Access</p>
+    </div>
   </div>
+</section>
 </body>
 </html>
